@@ -58,6 +58,8 @@ def obtenir_date_fichier(chemin,fichier,date_fichier2):
             ai=strV.index(i)
             mois=intV[ai]
     jour=date_fichier1[2]
+    if len(jour)!=2:
+        jour="0"+jour
     annee=date_fichier1[-1]
     date_fichier2=mois+"-"+jour+"-"+annee
     return date_fichier2
